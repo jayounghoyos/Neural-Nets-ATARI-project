@@ -1,0 +1,8 @@
+torch>=2.0.0
+torchvision
+gymnasium[atari]
+numpy
+matplotlib
+opencv-python
+tensorboard
+stable-baselines3[extra]
