@@ -13,5 +13,6 @@ observations, info = envs.reset()
 actions = envs.action_space.sample()
 observations, rewards, terminations, truncations, infos = envs.step(actions)
 
+
 # Close the environment when done
 envs.close()

@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+dqn-env/
+venv/
+env/
+.env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# PyTorch checkpoints and model files
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# TensorBoard logs
+logs/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Data and output
+*.mp4
+*.gif
+*.png
+plots/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
