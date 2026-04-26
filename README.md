@@ -82,7 +82,7 @@ Neural-Nets-ATARI-project/
 
 ---
 
-## Cursor de Hugging face
+## Curso de Hugging face
 
 This image summaryse a lot of the ideas of RL, specially for our Atari project
 ![alt text](image.png)
