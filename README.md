@@ -79,3 +79,10 @@ Neural-Nets-ATARI-project/
 - Wang et al. (2016) — *Dueling Network Architectures for Deep Reinforcement Learning*: https://arxiv.org/abs/1511.06581
 - Gymnasium docs: https://gymnasium.farama.org
 - ALE docs: https://ale.farama.org
+
+---
+
+## Cursor de Hugging face
+
+This image summaryse a lot of the ideas of RL, specially for our Atari project
+![alt text](image.png)
