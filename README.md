@@ -149,7 +149,7 @@ En DQN para Atari, transfer learning desde ImageNet **no es estándar** (el CNN 
 3. **Congelar Conv1** (low-level features: bordes, contrastes — universales entre juegos Atari) y **fine-tunear Conv2, Conv3 + las FC** con el TD-error de Breakout.
 4. Comparar curva de aprendizaje vs el agente entrenado from-scratch.
 
-**Hipótesis a verificar:** la inicialización pretrained debería reducir las primeras ~500k transiciones de exploración aleatoria, ya que los filtros de detección de "objetos en movimiento sobre fondo negro" se transfieren bien entre Pong y Breakout. Si el experimento se realiza, va en `baseline_comparison.py` como tercera curva (manual / SB3 / manual+TL).
+**Hipótesis a verificar:** la inicialización pretrained debería reducir las primeras ~500k transiciones de exploración aleatoria, ya que los filtros de detección de "objetos en movimiento sobre fondo negro" se transfieren bien entre Pong y Breakout..
 
 ---
 
