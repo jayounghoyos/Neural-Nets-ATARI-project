@@ -1,0 +1,28 @@
+                                                                                                           
+# Entrenar desde cero                                                                                                                                       
+python main.py train --run-name run1                                                                                                                        
+                                                                                                                                                            
+# Pausar: Ctrl+C → guarda checkpoint y dqn_latest.pt automáticamente                                                                                        
+                                                                                                                                                            
+# Continuar otro día                                                                                                                                        
+python main.py train --run-name run1 --resume checkpoints/dqn_latest.pt                                                                                     
+                                                                        
+# Evaluar                                                                                                                                                   
+python main.py eval --checkpoint checkpoints/dqn_latest.pt --episodes 10
+                                                                                                                                                            
+# Ver al agente jugando                                                                                                                                     
+python main.py watch --checkpoint checkpoints/dqn_latest.pt
+                                                                                                                                                            
+# Baseline SB3 para comparar                                                                                                                                
+python main.py baseline --total-steps 1000000
+                                                                                                                                                            
+# Visualizar TensorBoard                                                                                                                                    
+tensorboard --logdir runs/
+                                                                                                                                                            
+Próximo paso recomendado: correr una sesión real (python main.py train --total-steps 1000000) y dejarla entrenar — el agente debería empezar a anotar puntos
+consistentemente alrededor de los 500k-1M steps.                                                                                                           
+                                                                                            
+
+                                                                                                                                                      
+Déjalo correr. Si quieres pausar para checkpoint intermedio, Ctrl+C en cualquier momento y reanudar después con --resume checkpoints/dqn_latest.pt.         
+                                                                  

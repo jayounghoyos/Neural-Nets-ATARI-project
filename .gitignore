@@ -19,11 +19,11 @@ dist/
 *.egg-info/
 *.egg
 
-# PyTorch checkpoints and model files
-checkpoints/
+# PyTorch checkpoints — solo checkpoints/dqn_latest.pt se sube; intermedios quedan locales
 *.pt
 *.pth
 *.ckpt
+!checkpoints/dqn_latest.pt
 
 # TensorBoard logs
 logs/
