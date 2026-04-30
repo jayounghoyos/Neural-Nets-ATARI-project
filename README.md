@@ -20,9 +20,9 @@ Formalmente es un **Markov Decision Process (MDP)**:
 | Terminación | Perder las **5 vidas** o agotar el timeout |
 | Objetivo | Maximizar el reward acumulado descontado: `E[Σ γ^t r_t]` con `γ = 0.99` |
 
-A diferencia de un problema supervisado, el agente **nunca ve "ejemplos correctos"**: aprende por ensayo y error a partir de la señal de recompensa.
+A diferencia de un problema supervisado, el agente nunca ve "ejemplos correctos": aprende por ensayo y error a partir de la señal de recompensa.
 
-### ¿Por qué DQN para este problema?
+# ¿Por qué DQN para este problema?
 
 | Razón | Explicación |
 |-------|-------------|
