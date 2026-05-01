@@ -10,7 +10,7 @@ class Config:
     SEED: int = 1
 
     # Training hyperparameters
-    TOTAL_STEPS: int = 1_000_000
+    TOTAL_STEPS: int = 10_000_000
     BATCH_SIZE: int = 32
     LEARNING_RATE: float = 1e-4
     GAMMA: float = 0.99
