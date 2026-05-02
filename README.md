@@ -4,7 +4,7 @@ Agente de **Deep Reinforcement Learning** que aprende a jugar **Breakout (Atari 
 
 El agente no recibe reglas, estrategias ni demostraciones humanas: aprende exclusivamente por ensayo y error a partir de los píxeles crudos del juego y la señal de recompensa del entorno.
 
-**Stack:** Python 3.10+ · PyTorch · Gymnasium (ALE) · TensorBoard · Stable-Baselines3 (solo baseline comparativo)
+**Stack:** Python 3.10+ · PyTorch · Gymnasium (ALE) · TensorBoard
 
 ---
 
@@ -12,7 +12,7 @@ El agente no recibe reglas, estrategias ni demostraciones humanas: aprende exclu
 
 ```
 Neural-Nets-ATARI-project/
-├── main.py                  # Entry point — CLI para train / eval / watch / baseline
+├── main.py                  # Entry point — CLI para train / eval / watch
 ├── config.py                # Hiperparámetros centralizados (dataclass)
 ├── model.py                 # QNetwork — CNN del paper Mnih et al. 2015
 ├── agent.py                 # DQNAgent — selección de acción, update, target sync, save/load
@@ -20,7 +20,6 @@ Neural-Nets-ATARI-project/
 ├── wrappers.py              # Pipeline de preprocesamiento del entorno (MaxAndSkip, Resize, etc.)
 ├── train.py                 # Loop de entrenamiento con Ctrl+C graceful
 ├── evaluate.py              # Evaluación y visualización del agente
-├── baseline_comparison.py   # Baseline con Stable-Baselines3 DQN para comparación
 ├── utils.py                 # Utilidades (seeds, epsilon schedule, device, timer)
 ├── requirements.txt         # Dependencias del proyecto
 ├── STARTUP.md               # Guía paso a paso para configurar el entorno
@@ -240,9 +239,6 @@ python main.py eval --checkpoint checkpoints/dqn_latest.pt --episodes 10
 
 # 12. Ver al agente jugando
 python main.py watch --checkpoint checkpoints/dqn_latest.pt
-
-# 13. Entrenar baseline SB3 para comparación
-python main.py baseline --run-name shared_run
 ```
 
 ### Workflow para entrenar por turnos en equipo

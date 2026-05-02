@@ -44,9 +44,6 @@ def main():
     p_watch.add_argument("--epsilon", type=float, default=0.05)
     _add_config_overrides(p_watch)
 
-    p_baseline = sub.add_parser("baseline", help="train SB3 DQN baseline")
-    _add_config_overrides(p_baseline)
-
     args = parser.parse_args()
     cfg = _apply_overrides(Config(), args)
 
@@ -60,9 +57,6 @@ def main():
         from evaluate import evaluate
         evaluate(cfg, args.checkpoint, episodes=args.episodes, epsilon=args.epsilon,
                  render_mode="human")
-    elif args.cmd == "baseline":
-        from baseline_comparison import run_baseline
-        run_baseline(cfg)
 
 
 if __name__ == "__main__":
