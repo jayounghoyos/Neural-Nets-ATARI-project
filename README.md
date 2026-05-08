@@ -1,5 +1,9 @@
 # Neural-Nets-ATARI-project
 
+
+### Screenshot of the last training made (may 7 2026)
+![alt text](latestTraining.png)
+
 Agente de **Deep Reinforcement Learning** que aprende a jugar **Breakout (Atari 2600)** desde cero utilizando **Deep Q-Network (DQN)**, basado en el paper fundacional de Mnih et al. (2015).
 
 El agente no recibe reglas, estrategias ni demostraciones humanas: aprende exclusivamente por ensayo y error a partir de los píxeles crudos del juego y la señal de recompensa del entorno.
