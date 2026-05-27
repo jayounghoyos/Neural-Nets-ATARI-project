@@ -345,7 +345,7 @@ A diferencia de un dataset estático, la "distribución" en RL cambia con la pol
 
 ```bash
 # 1. Clonar e instalar
-git clone <url-del-repo>
+git clone https://github.com/jayounghoyos/Neural-Nets-ATARI-project.git
 cd Neural-Nets-ATARI-project
 python -m venv dqn-env && source dqn-env/bin/activate   # Linux/Mac
 pip install -r requirements.txt

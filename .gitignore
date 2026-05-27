@@ -35,6 +35,7 @@ logs/
 *.mp4
 *.gif
 *.png
+!latestTraining.png
 plots/
 
 # Environment variables

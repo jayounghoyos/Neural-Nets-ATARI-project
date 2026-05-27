@@ -3,7 +3,7 @@
 ## 1. Clonar repo
 
 ```bash
-git clone <url-del-repo>
+git clone https://github.com/jayounghoyos/Neural-Nets-ATARI-project.git
 cd Neural-Nets-ATARI-project
 ```
 
