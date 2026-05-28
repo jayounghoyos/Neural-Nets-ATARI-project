@@ -391,6 +391,19 @@ git push
 
 ---
 
+
+## 11. AI Usage Statement
+
+### Mostly Claude Code
+
+Más que en la red neuronal en sí, de eso ya existe mucha documentación, papers y código de referencia y era cuestión de integrarlo, donde usamos la IA fue para construir una base robusta y modular. La mayoría de los ejemplos disponibles concentran todo en un solo archivo y son poco mantenibles; con ayuda de la IA separamos el proyecto en módulos que se integran de forma limpia con la red y el loop de entrenamiento.
+
+Un ejemplo concreto es config.py: una parte la hicimos con IA para centralizar todos los hiperparámetros en un solo lugar y poder "tunear" fácilmente los valores y la cantidad de entrenamiento sin tocar mucho el resto del código.
+
+También nos apoyamos en la IA para la arquitectura del entrenamiento por turnos. Como entrenamos en distintas máquinas y en distintos momentos, necesitábamos que los checkpoints y los logs de TensorBoard mantuvieran un historial continuo y sin huecos ni partes corruptas (todos usando el mismo run-name). En el video explicativo se ve que la curva conserva ese historial: los distintos colores, gris y un tramo azul en la mitad, corresponden a las distintas corridas o máquinas, no a datos corruptos.
+
+---
+
 ## 10. Referencias
 
 ### Papers
